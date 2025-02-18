@@ -1,0 +1,2643 @@
+[
+  {
+    "modelInfo": {
+      "name": "OpenAI",
+      "version": "gpt-4",
+      "model": "gpt-4",
+      "maxTokens": 150,
+      "temperature": 0.2,
+      "apiKey": "sk-...REMOVED..."
+    },
+    "moves": [
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            2,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the only tiles present are two '2' tiles, both located in the bottom row. The best move in this situation would be to move to the right. This will cause the two '2' tiles to merge into a '4' tile, increasing the score and freeing up more space on the board for new tiles to appear. This move will also keep the highest value tile in the corner, which is a good strategy for this game as it allows for easier merging of lower value tiles.\n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 211,
+            "completion": 110,
+            "total": 321
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 0,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            2,
+            4
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the best move would be to swipe left. This is because the two '2' tiles in the bottom row will combine to form a '4' tile, and this '4' tile will then combine with the existing '4' tile to form an '8' tile. This move will maximize the score increase and also keep the highest value tile in the corner, which is a good strategy for this game. \n\nMOVE: left",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 213,
+            "completion": 95,
+            "total": 308
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            4,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "down",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 0,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            4,
+            2,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the best move would be to go to the left. This is because the two '4' tiles in the bottom row will merge into an '8' tile when moved to the left. This will not only increase the score but also free up space on the board for new tiles to appear. The '2' tile in the bottom row will also move to the left, aligning it with the '2' tile in the top row for potential future merging. \n\nThe other moves (up, down, right) do not result in any merges and do not position the tiles favorably for future merges. \n\nMOVE: left",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 134,
+            "total": 349
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            8,
+            2,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "Looking at the current board state, the best move would be to go 'up'. This move will cause the '2' tile in the third row to merge with the '2' tile in the first row, creating a '4' tile. The '8' tile in the fourth row will also move up to the third row. This move will not only increase the score but also consolidate the numbers to the top of the grid, which is a good strategy for the game. \n\nSo, my next move will be 'up'.\n\nMOVE: up",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 112,
+            "total": 327
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            2,
+            2,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the most beneficial move would be to swipe to the left. This would cause the three '2' tiles in the top row to merge into a '4' and a '2', and the '8' tile in the second row would also move to the left. This move would not only increase the score but also consolidate the numbers to one side of the board, which is a good strategy for the game 2048. \n\nMOVE: left",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 98,
+            "total": 313
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            2,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 0,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            2,
+            0,
+            2
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 8,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide to the right. This move will merge the two '4' tiles in the top row, resulting in an '8' tile. The '8' tile in the second row will stay in place, and the '4' and '2' tiles in the third and fourth rows will move to the right. This move will not only increase the score but also keep the higher valued tiles on one side of the board, which is a good strategy for the game 2048. \n\nMOVE: right",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 116,
+            "total": 331
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the right. This move will merge the two 8 tiles, resulting in a 16 tile. It will also align the 2, 4, and 16 tiles on the right side of the board. Keeping the highest value tiles on one side of the board is a good strategy in 2048, as it makes it easier to merge tiles in future moves. \n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 97,
+            "total": 312
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            2,
+            2,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 4,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            8,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles upwards. This move will merge the two '4' tiles in the first column, creating an '8' tile. This will also move the '8' tile in the second row to the top, and the '2' tile in the fourth row will move up to the second row. This move will not only increase the score but also consolidate the higher value tiles towards one corner of the board, which is a good strategy for this game. \n\nSo, my next move would be to slide the tiles upwards.\n\nMOVE: up",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 124,
+            "total": 339
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            8,
+            2,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the left. This move will merge the two '4' tiles in the first row, creating an '8' tile. The '8' tile will then merge with the adjacent '8' tile, creating a '16' tile. This move will also slide the '2' tile in the first row to the left, filling the empty space. In the fourth row, the two '2' tiles will merge to create a '4' tile. This move will maximize the score and create larger numbered tiles, which is the goal of the game. \n\nMOVE: left",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 134,
+            "total": 349
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            8,
+            2,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            2
+          ],
+          [
+            4,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the left. This move will merge the two '4' tiles in the bottom row, creating an '8' tile. The '8' tile in the top row will also move to the left, filling the empty space. This move will also shift the '2' tile in the third row to the left, filling the empty space. \n\nThis move will not only increase the score but also consolidate the tiles to one side, which is a good strategy for the game. It will also open up more space on the right side of the board for new tiles to appear. \n\nMOVE: left",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 138,
+            "total": 353
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            8,
+            2,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            2
+          ],
+          [
+            4,
+            2,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the right. This move will merge the 2 and 2 in the top row, resulting in a 4 tile. It will also shift all the other tiles to the right, potentially setting up future merges. This move will not cause any merges in the other rows, but it will group the numbers together, which could be beneficial for future moves. \n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 93,
+            "total": 308
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            4,
+            8,
+            2
+          ],
+          [
+            0,
+            2,
+            8,
+            2
+          ],
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles up. This move will merge the 4s in the last column, resulting in an 8 tile. The 2s in the second column will also merge, creating a 4 tile. The 8s in the third column will not merge because they are not adjacent, but they will be moved up, creating potential for future merges. This move will also leave a lot of space at the bottom for new tiles to appear, which can be beneficial for future moves.\n\nSo, my next move will be up.\n\nMOVE: up",
+        "scoreDelta": 20,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 125,
+            "total": 340
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            4,
+            16,
+            4
+          ],
+          [
+            2,
+            2,
+            4,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the best move would be to swipe left. This move will merge the two '2' tiles in the second row, forming a '4' tile. It will also shift all the other tiles to the left, potentially setting up future merges. \n\nThis move is also consistent with a common strategy in 2048, which is to keep the highest valued tiles in one corner of the board. In this case, the '16' tile is already in the top right corner, and moving left will not disrupt this positioning.\n\nSo, my next move would be to swipe left.\n\nMOVE: left",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 127,
+            "total": 342
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            16,
+            4,
+            0
+          ],
+          [
+            4,
+            4,
+            2,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the left. This move will merge the two '4' tiles in the first row into an '8' tile, and the two '4' tiles in the second row into another '8' tile. This will also slide the '2' tile in the second row to the left, filling the space left by the merged '4' tiles. The '4' tile in the third row and the '2' tile in the fourth row will also move to the left. This move will not only increase the score but also consolidate the tiles to one side, which is a good strategy for the game. \n\nMOVE: left",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 145,
+            "total": 360
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            16,
+            4,
+            0
+          ],
+          [
+            8,
+            2,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the right. This move will merge the two '4' tiles in the top row, creating an '8' tile. It will also slide the '16' tile to the right, filling the empty space. The '2' tile in the bottom row will also move to the right, filling another empty space. This move will not only increase the score but also consolidate the tiles to one side, making future merges easier.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 107,
+            "total": 322
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            4,
+            16,
+            4
+          ],
+          [
+            0,
+            2,
+            8,
+            2
+          ],
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles up. This move will merge the 2's in the last column into a 4, and the 4's in the second column into an 8. The 16 and 8 tiles in the third column will also move up, making room for new tiles at the bottom. This move will also keep the higher value tiles in the top right corner, which is a good strategy for this game as it helps to keep the board organized and makes it easier to merge tiles in the future. \n\nMOVE: up",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 121,
+            "total": 336
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            4,
+            16,
+            4
+          ],
+          [
+            0,
+            2,
+            8,
+            4
+          ],
+          [
+            2,
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 0,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            4,
+            16,
+            4
+          ],
+          [
+            0,
+            2,
+            8,
+            4
+          ],
+          [
+            0,
+            2,
+            4,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the best move seems to be to the left. This move will merge the two '2' tiles in the second row, creating a '4' tile. It will also slide all the other tiles to the left, potentially setting up future merges. This move will not cause any negative effects, as there are no opportunities for merges in the other directions that would be blocked by this move. \n\nTherefore, my next move will be to the left.\n\nMOVE: left",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 101,
+            "total": 316
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            4,
+            16,
+            4
+          ],
+          [
+            2,
+            8,
+            4,
+            0
+          ],
+          [
+            2,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 0,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            4,
+            16,
+            4
+          ],
+          [
+            2,
+            2,
+            8,
+            4
+          ],
+          [
+            0,
+            2,
+            4,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the left. This move will merge the two '2' tiles in the second row, creating a '4' tile. It will also shift the '4' and '2' tiles in the third and fourth rows to the left, filling the empty spaces. This move will not only increase the score but also make room for new tiles to appear on the right side of the board. \n\nSo, my next move will be to the left.\n\nMOVE: left",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 111,
+            "total": 326
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            4,
+            16,
+            4
+          ],
+          [
+            4,
+            8,
+            4,
+            0
+          ],
+          [
+            2,
+            4,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 4,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            4,
+            16,
+            4
+          ],
+          [
+            0,
+            4,
+            8,
+            4
+          ],
+          [
+            2,
+            2,
+            4,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 4,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            4,
+            16,
+            4
+          ],
+          [
+            0,
+            4,
+            8,
+            4
+          ],
+          [
+            0,
+            4,
+            4,
+            2
+          ],
+          [
+            0,
+            2,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 8,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            4,
+            16,
+            4
+          ],
+          [
+            0,
+            4,
+            8,
+            4
+          ],
+          [
+            2,
+            0,
+            8,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            4
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the left. This move will merge the two '4' tiles in the first row, the two '4' tiles in the second row, and the two '2' tiles in the fourth row. This will result in a higher score and a more consolidated board, which will make future moves easier. \n\nAlso, this move will not disrupt the '16' tile in the top row, which is currently our highest value tile. Keeping the highest value tile in a corner is a good strategy in 2048, as it allows us to build up the other tiles around it without risking it being moved from the corner.\n\nMOVE: left",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 146,
+            "total": 361
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            4,
+            16,
+            4
+          ],
+          [
+            4,
+            8,
+            4,
+            0
+          ],
+          [
+            2,
+            8,
+            2,
+            0
+          ],
+          [
+            2,
+            4,
+            2,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the right. This move will merge the 4 and 4 in the second row, the 2 and 2 in the third row, and the 2 and 2 in the fourth row, increasing the score and creating more space on the board. This move also aligns with the strategy of keeping the highest value tile in a corner, which in this case is the 16 tile in the top right corner. \n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 107,
+            "total": 322
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            4,
+            16,
+            4
+          ],
+          [
+            0,
+            4,
+            8,
+            4
+          ],
+          [
+            0,
+            2,
+            8,
+            2
+          ],
+          [
+            2,
+            2,
+            4,
+            2
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 4,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            4,
+            16,
+            4
+          ],
+          [
+            4,
+            8,
+            4,
+            2
+          ],
+          [
+            2,
+            8,
+            2,
+            0
+          ],
+          [
+            4,
+            4,
+            2,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the right. This move will merge the two '4' tiles in the bottom row, creating an '8' tile. It will also slide the '2' tile in the third row to the right, filling the empty space. \n\nThis move will not only increase the score but also make the board more organized. It's generally a good strategy in 2048 to keep the highest valued tiles in one corner and try to build around that. \n\nSo, my next move would be to the right.\n\nMOVE: right",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 123,
+            "total": 338
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            4,
+            16,
+            4
+          ],
+          [
+            4,
+            8,
+            4,
+            2
+          ],
+          [
+            2,
+            2,
+            8,
+            2
+          ],
+          [
+            0,
+            0,
+            8,
+            2
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 20,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            4,
+            16,
+            4
+          ],
+          [
+            4,
+            8,
+            4,
+            4
+          ],
+          [
+            2,
+            2,
+            16,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to move the tiles to the right. This move would merge the two '4' tiles in the second row, creating an '8' tile. In the third row, the two '2' tiles would merge into a '4' tile, and the '16' and '2' tiles would slide to the right. The fourth row would also slide to the right, moving the '2' tile to the far right. This move would not only increase the score but also create a more organized board, making future moves easier to plan.\n\nMOVE: right",
+        "scoreDelta": 12,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 126,
+            "total": 341
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            4,
+            16,
+            4
+          ],
+          [
+            0,
+            4,
+            8,
+            8
+          ],
+          [
+            2,
+            4,
+            16,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to the right. This is because the 8 and 8 in the second row can merge to form 16, and the 4 and 16 in the third row can move closer together, potentially setting up a future merge. The 2 and 4 in the first row will also move closer together, potentially setting up another future merge. \n\nThis move will not only increase the score but also free up some space on the board for new tiles to appear. It's important to keep the board as uncluttered as possible to allow for more flexibility in future moves.\n\nSo, my next move would be to the right.\n\nMOVE: right",
+        "scoreDelta": 16,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 144,
+            "total": 359
+          }
+        }
+      }
+    ],
+    "finalScore": 160,
+    "maxTile": 16,
+    "totalMoves": 35,
+    "won": false,
+    "duration": 185403,
+    "totalTokens": 7673,
+    "estimatedCost": 0
+  },
+  {
+    "modelInfo": {
+      "name": "OpenAI",
+      "version": "gpt-4",
+      "model": "gpt-4",
+      "maxTokens": 150,
+      "temperature": 0.2,
+      "apiKey": "sk-...REMOVED..."
+    },
+    "moves": [
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 0,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 0,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles upwards. This move will merge the three '2' tiles in the first column into a '4' and a '2', and bring the '4' tile from the third row to the first row. This move will also open up more space at the bottom for new tiles to appear. The goal in 2048 is to keep the board as uncluttered as possible, and to try to create larger numbers by merging smaller ones. By moving up, we are able to achieve both of these objectives.\n\nMOVE: up",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 213,
+            "completion": 124,
+            "total": 337
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the best move would be to slide to the left. This is because the top row has two 4 tiles next to each other on the right. By moving to the left, these two tiles will merge into an 8 tile. This will increase the score and also free up more space on the board for new tiles to appear. The second row has a 2 tile that will also move to the left, but it will not merge with any other tile. The third row has a 4 tile that will move to the left, but it will not merge with any other tile. The bottom row is empty, so moving to the left will not change anything there.\n\nMOVE: left",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 146,
+            "total": 361
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the left. This move will merge the '8' and '2' tiles with any similar tiles on their left, if any appear after the move. It will also bring the '4' and '2' tiles in the third row closer together, potentially setting them up for a merge in a future move. Additionally, moving the tiles to the left will keep the highest valued tiles in the corner, which is a good strategy for this game as it helps to avoid the highest valued tile from getting stuck in the middle with no similar tiles to merge with.\n\nSo, my next move will be to the left.\n\nMOVE: left",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 144,
+            "total": 359
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the best move would be to slide to the left. This will combine the two '2' tiles in the third row, resulting in a '4' tile. The '8' and '2' tiles in the first and second rows will also move to the left, filling up the empty spaces. This move will not only increase the score but also keep the higher value tiles to one side, which is a good strategy for this game. \n\nSo, my next move will be to the left.\n\nMOVE: left",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 112,
+            "total": 327
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            4,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the left. This would merge the two '4' tiles in the third row, creating an '8' tile. The '2' tile in the second row would also move to the left, and the '8' tile in the first row would stay in place. This move would not only increase the score but also consolidate the numbers to one side, which is a good strategy for the game. \n\nSo, my next move would be to the left.\n\nMOVE: left",
+        "scoreDelta": 12,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 114,
+            "total": 329
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            2,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "Looking at the current board state, the most beneficial move would be to slide the tiles upwards. This move will merge the two '8' tiles in the first column into a '16' tile, and the '4' and '2' tiles in the second and third columns will also move up, filling the empty spaces. This move will not only increase the score but also consolidate the numbers to the top of the grid, which is a common strategy in 2048 to keep the highest numbers in one corner and the lowest numbers on the opposite side. \n\nMOVE: up",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 117,
+            "total": 332
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            8,
+            0,
+            2,
+            2
+          ],
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide to the right. This will merge the two '2' tiles in the top row, creating a '4' tile. The '8' tiles in the first and second row will also move to the right, filling the empty space. This move will not only increase the score but also keep the higher value tiles to the right, which is a good strategy for the game. \n\nSo, my next move will be to the right.\n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 106,
+            "total": 321
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            0,
+            8,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 0,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      }
+    ],
+    "finalScore": 32,
+    "maxTile": 8,
+    "totalMoves": 10,
+    "won": false,
+    "duration": 56425,
+    "totalTokens": 2366,
+    "estimatedCost": 0
+  },
+  {
+    "modelInfo": {
+      "name": "OpenAI",
+      "version": "gpt-4",
+      "model": "gpt-4",
+      "maxTokens": 150,
+      "temperature": 0.2,
+      "apiKey": "sk-...REMOVED..."
+    },
+    "moves": [
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 0,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to go to the right. This is because the two '2' tiles in the top row will merge into a '4' tile when moved to the right. The '2' tile in the third row will also move to the right, filling the empty space. This move will not only increase the score but also consolidate the numbers to one side of the board, which is a good strategy for the game. \n\nSo, my move choice is right.\n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 211,
+            "completion": 108,
+            "total": 319
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "Looking at the current board state, the best move would be to the left. This move will combine the two '2' tiles in the third row into a '4' tile. This will increase the score and also free up an additional space on the board. It's also a good strategy to try to keep the highest value tiles in one of the corners. In this case, moving left will keep the '4' tile in the top-right corner. \n\nMOVE: left",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 213,
+            "completion": 97,
+            "total": 310
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "Looking at the current board state, the best move would be to move up. This would cause the two '4' tiles to merge into an '8' tile. This is beneficial as it not only increases the score but also frees up more space on the board for new tiles to appear. This move also aligns with a common strategy in 2048, which is to keep the highest value tile in a corner and build around it. In this case, the '8' tile would be in the top left corner after the move. \n\nMOVE: up",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 114,
+            "total": 329
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            8,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the right. This move will merge the two '2' tiles in the top row, creating a '4' tile. This will also move the '8' tile to the far right, keeping the higher value tiles towards one corner, which is a good strategy for this game. The other tiles will also move to the right, leaving more space on the left for new tiles to appear. \n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 101,
+            "total": 316
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            8,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the right. This will cause the two '2' tiles in the top row to merge, creating a '4' tile. This move will also shift the '8' tile to the rightmost position, which is a good strategy for the game as it keeps the highest valued tile in a corner. This is beneficial because it allows us to build up the other tiles around it without risking the high valued tile being moved from its position.\n\nSo, my next move would be to the right.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 120,
+            "total": 335
+          }
+        }
+      }
+    ],
+    "finalScore": 16,
+    "maxTile": 8,
+    "totalMoves": 6,
+    "won": false,
+    "duration": 29557,
+    "totalTokens": 1609,
+    "estimatedCost": 0
+  },
+  {
+    "modelInfo": {
+      "name": "OpenAI",
+      "version": "gpt-4",
+      "model": "gpt-4",
+      "maxTokens": 150,
+      "temperature": 0.2,
+      "apiKey": "sk-...REMOVED..."
+    },
+    "moves": [
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 0,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the right. This is because the 2 tile in the third row can be moved to the right to join the 2 tile in the fourth column, creating a 4 tile. This move will also slide the 4 tile in the bottom row to the right, aligning it with the newly created 4 tile. This sets up the possibility of merging these two 4 tiles into an 8 tile in the next move, if a new 2 tile doesn't spawn in the wrong place. \n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 211,
+            "completion": 123,
+            "total": 334
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "Looking at the current board state, the best move would be to swipe up. This move will merge the two '2' tiles in the top right corner, creating a '4' tile. It will also move the '2' and '4' tiles from the bottom two rows up, which will help to consolidate the numbers and potentially set up for future merges. \n\nThis move also aligns with a common strategy in 2048, which is to try to keep the highest value tiles in one of the corners. In this case, we're working towards keeping the highest value tiles in the top right corner.\n\nMOVE: up",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 213,
+            "completion": 128,
+            "total": 341
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            2,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide to the right. This will merge the two '4' tiles in the top row, creating an '8' tile. This is beneficial as it will increase the score and also free up more space on the board for new tiles to appear. The '2' tile in the bottom row will also move to the right, but this won't affect the overall strategy. \n\nThe goal in 2048 is to keep the highest value tile in a corner and build around it. By moving to the right, we're starting to position the highest value tile (which will be '8' after this move) in the top right corner. \n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 147,
+            "total": 362
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the right. This move will merge the two '4' tiles in the top row, creating an '8' tile. It will also slide the '2' tiles in the third and fourth rows to the right, setting up potential future merges. This move will not only increase the score but also keep the higher valued tiles on one side of the board, which is a good strategy for this game. \n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 103,
+            "total": 318
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the right. This move will merge the two '4' tiles in the top row, creating an '8' tile. The two '2' tiles in the bottom row will also merge, forming a '4' tile. This move will maximize the score and create larger tiles, which is the goal of the game. \n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 87,
+            "total": 302
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "Analyzing the current board state, the best move would be to swipe up. This move will merge the two '4' tiles in the rightmost column into an '8' tile, and the two '2' tiles in the bottom row into a '4' tile. This will result in a higher score and a more consolidated board, which is beneficial for future moves. \n\nMOVE: up",
+        "scoreDelta": 12,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 81,
+            "total": 296
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the right. This will merge the two '4' tiles in the top row and the two '2' tiles in the third row, resulting in a '8' tile and a '4' tile respectively. This will also move the '2' tile in the third row to the rightmost position. This move will not only increase the score but also keep the higher valued tiles on one side of the board, which is a good strategy for the game 2048. \n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 118,
+            "total": 333
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the right. This move will merge the two '4' tiles in the third row, creating an '8' tile. It will also align the '8' and '4' tiles in the top row, setting up for a potential merge in the next move if a '4' tile appears in the right place. Furthermore, this move will keep the highest value tiles in the top right corner, which is a good strategy for the game 2048. Keeping the highest value tile in a corner helps to avoid the creation of large tiles in the middle of the grid, which can block other merges.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 143,
+            "total": 358
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            0,
+            4,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "Looking at the current board state, the best move would be to go up. This will cause the two '4' tiles in the rightmost column to merge into an '8' tile. The '8' tile in the top row will stay in its current position. The '2' tile in the bottom row will move up to the second row. The '4' tile in the top row will stay in its current position. This move will not only increase the score but also consolidate the numbers to the top of the grid, which is a good strategy for the 2048 game as it keeps the larger numbers in one corner, making it easier to manage and combine them.\n\nMOVE: up",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 142,
+            "total": 357
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            0,
+            4,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            4,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide to the right. This would merge the two '8' tiles in the top row, creating a '16' tile. The '4' and '2' tiles in the bottom two rows would also move to the right, filling up the empty spaces. This move would not only increase the score but also keep the higher value tiles on one side of the board, which is a good strategy for the game. Therefore, my next move would be to the right.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 112,
+            "total": 327
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            2,
+            4,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to move the tiles to the right. This move will merge the two '8' tiles in the top row, creating a '16' tile. It will also merge the two '2' tiles in the third row, creating a '4' tile. This will not only increase the score but also free up more space on the board for new tiles to appear. \n\nSo, my next move would be to the right.\n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 102,
+            "total": 317
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            2,
+            4,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            2,
+            4
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 24,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      }
+    ],
+    "finalScore": 60,
+    "maxTile": 16,
+    "totalMoves": 13,
+    "won": false,
+    "duration": 67214,
+    "totalTokens": 3645,
+    "estimatedCost": 0
+  },
+  {
+    "modelInfo": {
+      "name": "OpenAI",
+      "version": "gpt-4",
+      "model": "gpt-4",
+      "maxTokens": 150,
+      "temperature": 0.2,
+      "apiKey": "sk-...REMOVED..."
+    },
+    "moves": [
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ]
+        ],
+        "chosenMove": "down",
+        "reasoning": "Looking at the current board state, there are two '2' tiles that are in the same column but not adjacent to each other. The goal is to merge these two tiles to create a '4' tile. \n\nThe best move would be to slide the tiles down. This will cause the two '2' tiles to collide and merge into a '4' tile. This move will also keep the highest value tile in the corner, which is a good strategy for this game as it allows for easier merging of smaller tiles into it.\n\nSo, my move choice is to slide down.\n\nMOVE: down",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 211,
+            "completion": 122,
+            "total": 333
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            4,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 0,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            4,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to slide the tiles to the right. This move will merge the two '2' tiles in the third row, creating a '4' tile. This will also move the '4' tile in the bottom row to the rightmost position. \n\nIt's generally a good strategy in 2048 to try to keep the highest value tiles in one of the corners. This makes it easier to merge smaller tiles into larger ones without disrupting the position of the larger tiles. By moving to the right, we're starting to position our highest value tile, the '4', into the rightmost corner.\n\nSo, my next move would be to the right.\n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 213,
+            "completion": 147,
+            "total": 360
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "Looking at the current board state, we have two 4 tiles at the bottom right corner and a 4 tile at the top left corner. The goal is to combine similar tiles to get higher numbers, and ultimately reach 2048.\n\nThe best move in this situation would be to move 'up'. This move will combine the two 4 tiles at the bottom right corner into an 8 tile. The 4 tile at the top left corner will remain in its position. This move will also open up more space at the bottom for new tiles to appear.\n\nSo, my next move will be 'up'.\n\nMOVE: up",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 127,
+            "total": 342
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, the best move would be to move the tiles to the right. This would merge the 4 and 8 tiles in the top row, creating a 12 tile. It would also move the 2 tile to the rightmost column, which is beneficial because it's generally a good strategy to keep the highest value tiles in one corner (in this case, the top right corner) to maximize opportunities for merging. This move would also leave three rows and three columns completely empty, providing plenty of space for new '2' tiles to appear without disrupting the current tile configuration.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 126,
+            "total": 341
+          }
+        }
+      }
+    ],
+    "finalScore": 16,
+    "maxTile": 8,
+    "totalMoves": 5,
+    "won": false,
+    "duration": 33621,
+    "totalTokens": 1376,
+    "estimatedCost": 0
+  }
+]

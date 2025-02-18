@@ -1,0 +1,2783 @@
+[
+  {
+    "modelInfo": {
+      "name": "OpenAI",
+      "version": "gpt-3.5-turbo",
+      "model": "gpt-3.5-turbo",
+      "maxTokens": 150,
+      "temperature": 0.2,
+      "apiKey": "sk-...REMOVED..."
+    },
+    "moves": [
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. This move will bring the '4' tile in the bottom right corner closer to the '2' tile, allowing them to merge on the next move. Additionally, it opens up space for new tiles to appear on the left side of the board.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 211,
+            "completion": 73,
+            "total": 284
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. This will bring the '2' and '4' tiles closer together, allowing them to potentially merge in the next move. Additionally, moving to the right clears up space on the left side of the board for new tiles to appear.\n\nAfter moving right, the board will look like this:\n0 0 0 2\n0 0 0 0\n0 0 0 2\n0 0 0 4\n\nThis move sets up the board for potential future merges and allows for more strategic tile placements. \n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 211,
+            "completion": 132,
+            "total": 343
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the highest value tile is 4. To merge tiles efficiently and clear up space for potential merges, it would be best to move the tiles towards the right. This will bring the 4 and 2 tiles together to create an 8 tile. Additionally, it will consolidate the 2 tiles on the right side of the board, making it easier to merge them in the future.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 213,
+            "completion": 87,
+            "total": 300
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In this board state, the best move would be to move the tiles to the right. By moving right, we can combine the two '2' tiles in the second row to create a '4' tile. This will help in consolidating the board and creating more opportunities for merging tiles in the future. Additionally, moving right will also bring the '4' tiles in the last column closer together for potential future merges.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 89,
+            "total": 304
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "In the current board state, the best move would be to move the tiles up. By moving up, we can combine the two '2' tiles in the second column to create a '4' tile. This will help in clearing up space and potentially setting up for future merges.\n\nAfter moving up, the board will look like this:\n2 0 4 2\n0 0 2 4\n0 0 0 2\n0 0 0 4\n\nThis move sets up the board for potential future merges and creates more opportunities for combining tiles efficiently.\n\nMOVE: up",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 123,
+            "total": 338
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            2,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the left. By doing so, we can merge the two '2' tiles in the second row to create a '4' tile. This will help in consolidating the numbers and creating larger tiles for potential future merges. Additionally, moving left will bring the '4' tile in the first row closer to the other '4' tile, making it easier to merge them in the future.\n\nMOVE: left",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 99,
+            "total": 314
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            4,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the highest numbers are located in the rightmost column. To merge the 4s and 2s efficiently, we should move the tiles to the right. This will allow us to combine the 4s and 2s, creating larger numbers and freeing up space for new tiles to appear.\n\nLooking at the board, moving right would result in the following board state:\n0 4 2 0\n0 2 4 2\n0 0 2 0\n0 0 4 0\n\nThis move sets us up for potential future merges and allows for better positioning of the tiles. It also opens up the possibility of creating larger numbers in the next few moves.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 150,
+            "total": 365
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            2,
+            4,
+            2
+          ],
+          [
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the largest numbers are located in the bottom right corner. To merge them efficiently, we need to move the tiles to the right and then down. \n\nLooking at the board, we can see that moving right would allow us to merge the 4s in the second row and the 2s in the fourth row. This will create space for new tiles and potentially set up more merges in the future.\n\nTherefore, the best move in this situation is to move right.\n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 104,
+            "total": 319
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            2,
+            4,
+            2
+          ],
+          [
+            0,
+            2,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, I see that the highest value tile is 4. To maximize the chances of merging tiles and creating larger numbers, I should try to align similar numbers. In this case, I can see that there are two '2' tiles in the second row that can be merged by moving the tiles to the right. This will also create space for new tiles to appear.\n\nTherefore, the best move in this situation is to move the tiles to the right.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 101,
+            "total": 316
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            2,
+            2,
+            4,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. This move would combine the two '2' tiles in the second row, resulting in a '4' tile. It would also align the '4' tiles in the first row for a potential future merge. Moving to the right would also clear up space in the last column for new tiles to appear.\n\nAfter the move to the right, the board would look like this:\n0 0 0 4\n0 2 4 4\n0 0 0 2\n0 0 0 4\n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 130,
+            "total": 345
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            4,
+            4,
+            2
+          ],
+          [
+            2,
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the highest numbers are located in the bottom right corner. To merge the tiles efficiently and create space for new tiles, I should move the tiles towards the bottom right corner. \n\nLooking at the board, I see that I can move the tiles to the right to merge the 4s and the 2s. This will also create space for new tiles to appear. \n\nTherefore, my next move should be to move the tiles to the right.\n\nMOVE: right",
+        "scoreDelta": 12,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 100,
+            "total": 315
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            2,
+            0,
+            8,
+            2
+          ],
+          [
+            0,
+            0,
+            4,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, I see that the largest numbers are on the right side. To merge tiles efficiently and clear up space for new tiles, I should move the tiles to the right. \n\nMy reasoning for choosing to move right is to consolidate the larger numbers on the right side of the board, making it easier to merge them in future moves. This will also help in creating larger numbers and potentially reaching the goal of 2048.\n\nMOVE: right",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 94,
+            "total": 309
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            2,
+            8,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "In the current board state, the best move would be to move the tiles up. By moving up, we can merge the two '2' tiles in the second column to create a '4' tile. This will also bring the '8' tile in the third column closer to the other '8' tile, making it easier to merge them in the future. Additionally, moving up will create more space for new tiles to appear in the bottom row.\n\nMOVE: up",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 96,
+            "total": 311
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            2,
+            4,
+            4
+          ],
+          [
+            0,
+            0,
+            8,
+            8
+          ],
+          [
+            0,
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. This will allow the two '4' tiles in the second row to merge into an '8', creating more space on the board for future moves. Additionally, it will consolidate the '2' tiles in the third row, making it easier to merge them in the future.\n\nMOVE: right",
+        "scoreDelta": 24,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 78,
+            "total": 293
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            2,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            16
+          ],
+          [
+            0,
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            2,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "down",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 4,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            16
+          ],
+          [
+            2,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            2,
+            4,
+            2
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the largest numbers are located in the rightmost column. To merge these numbers efficiently, we need to move them to the left. \n\nLooking at the board, we can see that the 8, 16, 4, and 2 can all be moved to the left. By moving left, we can potentially merge the 8 and 16 to create a 32, and then merge the resulting 32 with the 4 to create a 36. This will help consolidate the numbers and create larger tiles for future merges.\n\nTherefore, the best move in this situation is to move left.\n\nMOVE: left",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 131,
+            "total": 346
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            4,
+            2,
+            0
+          ],
+          [
+            2,
+            4,
+            2,
+            0
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "In the current board state, the highest value tiles are 16 and 8. To merge them efficiently, we need to move the tiles towards each other. Since the 16 tile is on the second row and the 8 tile is on the first row, we should move the tiles up to bring them closer together.\n\nMoving up will also help in aligning the 4 tiles in the third column, potentially setting up future merges. It will also open up space for new tiles to appear at the bottom row.\n\nConsidering these factors, the best move is to move up.\n\nMOVE: up",
+        "scoreDelta": 16,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 120,
+            "total": 335
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            8,
+            8,
+            4,
+            0
+          ],
+          [
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the highest value tile is 16. To reach the goal of 2048, we need to focus on merging tiles efficiently and creating larger numbers. Looking at the board, we can see that there are two '8' tiles that can be merged to form a '16' tile. \n\nTo achieve this, we should move the '8' tiles together by swiping right. This will bring the two '8' tiles next to each other, allowing them to merge into a '16' tile. Additionally, this move will also align the other tiles in a way that sets up potential future merges.\n\nMOVE: right",
+        "scoreDelta": 16,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 132,
+            "total": 347
+          }
+        }
+      }
+    ],
+    "finalScore": 96,
+    "maxTile": 16,
+    "totalMoves": 18,
+    "won": false,
+    "duration": 24093,
+    "totalTokens": 5484,
+    "estimatedCost": 0
+  },
+  {
+    "modelInfo": {
+      "name": "OpenAI",
+      "version": "gpt-3.5-turbo",
+      "model": "gpt-3.5-turbo",
+      "maxTokens": 150,
+      "temperature": 0.2,
+      "apiKey": "sk-...REMOVED..."
+    },
+    "moves": [
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the '2' tile in the second row to the right, merging it with the '2' tile in the third row. This will create a '4' tile and open up space for potential future merges. \n\nThe board after the move would look like this:\n0 0 0 4\n0 0 0 0\n0 0 0 0\n0 0 0 0\n\nThis move sets up the board for potential future merges and keeps the board relatively clean for future moves. \n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 211,
+            "completion": 124,
+            "total": 335
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. By doing so, we can merge the two '2' tiles in the second row to create a '4' tile. This will help in consolidating the board and creating space for future moves. \n\nAfter moving right, the board will look like this:\n0 0 0 4\n0 0 0 0\n0 0 0 2\n0 0 0 0\n\nThis move sets up the board for potential future merges and allows for more strategic moves in subsequent turns. \n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 211,
+            "completion": 128,
+            "total": 339
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the highest numbers are 4 and 2. To merge them efficiently, we need to move the numbers towards each other. Since the numbers are on the right side of the board, we should move them to the left. This will allow the 2 and 4 to merge into an 8. \n\nTo achieve this, we should move all the tiles to the left. This will also help in consolidating the numbers on the board and create space for new tiles to appear. \n\nMOVE: left",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 213,
+            "completion": 108,
+            "total": 321
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "In the current board state, the highest value tile is 4. To maximize the chances of merging tiles and creating larger numbers, it is best to consolidate the numbers on the board. \n\nLooking at the board, the best move would be to move the tiles up. This will bring the 4 tile closer to the other 4 tile, potentially setting up a merge in the next move. Moving up also clears the bottom row, creating space for new tiles to appear.\n\nMOVE: up",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 99,
+            "total": 314
+          }
+        }
+      }
+    ],
+    "finalScore": 8,
+    "maxTile": 4,
+    "totalMoves": 4,
+    "won": false,
+    "duration": 15555,
+    "totalTokens": 1309,
+    "estimatedCost": 0
+  },
+  {
+    "modelInfo": {
+      "name": "OpenAI",
+      "version": "gpt-3.5-turbo",
+      "model": "gpt-3.5-turbo",
+      "maxTokens": 150,
+      "temperature": 0.2,
+      "apiKey": "sk-...REMOVED..."
+    },
+    "moves": [
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            4,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. This move would bring the '2' and '4' tiles closer together, allowing them to merge and create a '6' tile. Additionally, it opens up space for new tiles to appear on the left side of the board.\n\nAfter the move to the right, the board would look like this:\n0 0 0 2\n0 0 0 2\n0 0 0 6\n0 0 0 4\n\nThis move sets up potential future merges and maximizes the chances of creating larger tiles. \n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 211,
+            "completion": 134,
+            "total": 345
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. This move will bring the '4' tile in the last column to merge with the '4' tile next to it, creating an '8' tile. This consolidation will help clear up space for future moves and potentially create opportunities for larger merges.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 211,
+            "completion": 73,
+            "total": 284
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. This move will combine the two '2' tiles in the second row, resulting in a '4' tile. It will also combine the two '2' tiles in the third row, creating another '4' tile. This consolidation will help clear up space for future moves and potentially create opportunities for larger merges.\n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 213,
+            "completion": 86,
+            "total": 299
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "In the current board state, the best move would be to move the tiles up. This move would bring the '2' tile in the bottom row up to merge with the '2' tile in the second row, creating a '4' tile. This consolidation would free up space for potential future merges and prevent the board from getting too cluttered with low-value tiles.\n\nAdditionally, moving up would position the highest value tiles towards the top of the board, making it easier to create larger value tiles in subsequent moves.\n\nMOVE: up",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 108,
+            "total": 323
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. This will allow the '2' tiles to merge and create larger numbers. \n\nAnalyzing the board:\n- Moving right will merge the '2' tiles in the second row, resulting in a '4' tile.\n- The '4' tile in the second row can then merge with the '8' tile in the same row, creating a '12' tile.\n- This move will also clear up space in the first row for potential future merges.\n\nTherefore, the optimal move in this scenario would be to move the tiles to the right.\n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 133,
+            "total": 348
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            2,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the highest value tile is 8. To merge tiles effectively and create space for new tiles, it's important to consolidate the numbers towards one side. \n\nLooking at the board, the best move would be to move the tiles to the left. This will bring the 4 and 2 together to create an 8, and the 2 and 8 together to create a 10. Additionally, it will clear up space for new tiles to appear on the right side.\n\nMOVE: left",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 106,
+            "total": 321
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            8,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the highest value tile is 8. To maximize the chances of merging tiles and creating larger numbers, it would be beneficial to move the tiles towards the right side where the 8 tile is located. This will bring the 8 tile closer to the 2 tile in the same row, potentially allowing them to merge in the next move.\n\nAdditionally, moving the tiles to the right will also create space for the new '2' tile to appear on the board, increasing the chances of creating more opportunities for merging in subsequent moves.\n\nTherefore, the optimal move in this scenario is to move the tiles to the right.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 133,
+            "total": 348
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            2,
+            2,
+            8,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the highest value tile is 8. To maximize the chances of merging tiles and creating higher value tiles, it would be beneficial to consolidate the 2 tiles on the left side of the board. \n\nLooking at the board, it seems like moving the tiles to the left would be a good choice. This would bring the 4 and 2 tiles closer to the 8 tile, potentially setting up a merge in the future. Additionally, it would also free up space on the right side of the board for new tiles to appear.\n\nTherefore, the next move should be to slide the tiles to the left.\n\nMOVE: left",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 132,
+            "total": 347
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            2,
+            0,
+            0
+          ],
+          [
+            4,
+            8,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 0,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            4,
+            8,
+            2,
+            4
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "Looking at the current board state, I see that the highest tile values are on the right side of the board. To merge the tiles efficiently and clear up space for new tiles, I should move the tiles to the right. This will also help in aligning similar tiles for future merges.\n\nGiven the board state and the previous moves, I will move the tiles to the right.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 80,
+            "total": 295
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            4,
+            8,
+            2,
+            4
+          ],
+          [
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "To determine the best move, I will consider the current board state and the previous moves made. \n\nLooking at the board, I see that there are two '2' tiles and one '4' tile that can potentially be merged to create a '4' tile. This can be achieved by moving the '4' tile to the right. \n\nConsidering the previous moves of left, right, and right, it seems logical to continue the pattern and move right to merge the '2' tiles and '4' tile. This will also open up space for new tiles to appear.\n\nTherefore, the best move is to move right.\n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 131,
+            "total": 346
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            4,
+            8,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "Looking at the current board state, I see that the highest value tile is 8. To merge tiles efficiently and create larger numbers, I should try to align same-numbered tiles. In this case, I can see that the 4s are aligned vertically in the second column. \n\nTo merge the 4s and potentially create a 8 tile, I should move the tiles up. This will also help in consolidating the numbers and creating larger tiles in the future. \n\nMOVE: up",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 101,
+            "total": 316
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            8,
+            4,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            8
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the largest numbers are located in the second row. To merge them efficiently, we need to move them towards the right. However, the rightmost column is already filled, so we cannot move the numbers in the second row to the right. \n\nLooking at the board, we can see that the best move would be to move the numbers in the second row to the left. This will bring the two '2' tiles together, allowing them to merge and create a '4' tile. This move will also align the larger numbers in the second row for potential future merges.\n\nTherefore, the optimal move in this situation is to move the tiles to the left.\n\nMOVE: left",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 142,
+            "total": 357
+          }
+        }
+      }
+    ],
+    "finalScore": 36,
+    "maxTile": 8,
+    "totalMoves": 13,
+    "won": false,
+    "duration": 41937,
+    "totalTokens": 3929,
+    "estimatedCost": 0
+  },
+  {
+    "modelInfo": {
+      "name": "OpenAI",
+      "version": "gpt-3.5-turbo",
+      "model": "gpt-3.5-turbo",
+      "maxTokens": 150,
+      "temperature": 0.2,
+      "apiKey": "sk-...REMOVED..."
+    },
+    "moves": [
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. This will bring the two '2' tiles together and merge them into a '4' tile. It will also create space for new tiles to appear on the left side.\n\nAfter moving right, the board will look like this:\n0 0 0 2\n0 0 0 0\n0 0 0 2\n0 0 0 0\n\nThis move sets up the board for potential future merges and keeps the board relatively clean with fewer isolated tiles.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 211,
+            "completion": 122,
+            "total": 333
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. This will bring the two '2' tiles together to create a '4' tile. This consolidation will help in clearing up space for future moves and potentially create opportunities for larger merges.\n\nAfter moving the tiles to the right, the board will look like this:\n0 0 0 4\n0 0 0 2\n0 0 0 4\n0 0 0 0\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 211,
+            "completion": 107,
+            "total": 318
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In this board state, the best move would be to move the tiles to the right. This will bring the two '2' tiles together to create a '4' tile. Since the previous moves were also to the right, this will continue the pattern and consolidate the tiles on the right side of the board.\n\nAfter moving right, the board will look like this:\n0 0 0 4\n0 0 0 4\n0 0 0 4\n0 0 0 0\n\nThis move sets up the board for potential future merges and creates space for new tiles to appear. \n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 213,
+            "completion": 130,
+            "total": 343
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. This move would combine the two '2' tiles in the second row into a '4' tile, clearing up space for potential future merges. It also aligns the higher value tiles to the right side, making it easier to merge them in the future.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 75,
+            "total": 290
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            4
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "In the current board state, the best move would be to move the tiles up. By moving up, the two '2' tiles in the fourth column will combine to form a '4' tile. This will help in consolidating the board and creating more space for future moves. Additionally, moving up will also bring the '4' tile in the third row closer to the other '4' tile, potentially setting up a merge in the future.\n\nMOVE: up",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 95,
+            "total": 310
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "API Error - Fallback to random move",
+        "scoreDelta": 4,
+        "metadata": {
+          "error": "No valid move direction found"
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            4,
+            0,
+            0
+          ],
+          [
+            2,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. This move will bring the two '4' tiles together to create an '8' tile, which is a step towards merging to higher numbers. It also clears up space on the left side for potential future merges.\n\nAfter moving right, the board will look like this:\n0 0 8 0\n0 2 4 0\n0 0 0 0\n0 0 2 2\n\nMOVE: right",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 109,
+            "total": 324
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            2,
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the highest value tile is 8. To maximize the chances of merging tiles and creating larger numbers, it is best to consolidate the numbers towards one side. \n\nLooking at the board, it seems that moving the tiles to the left would be the most strategic move. This would bring the 8 tile closer to the 4 tile, potentially setting up a merge in the next move. Additionally, it would align the 2 tiles in the second row, making it easier to merge them in the future.\n\nMOVE: left",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 111,
+            "total": 326
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            8,
+            0,
+            0,
+            2
+          ],
+          [
+            4,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the highest value tile is 8. To maximize the chances of merging tiles and creating larger numbers, it's best to keep the higher value tiles in a corner. In this case, the 8 tile is already in the top left corner, which is a good position.\n\nLooking at the board, the next best move would be to move the tiles to the left. This will bring the 8 and 2 tiles closer together, potentially allowing them to merge in the next few moves. Moving left also consolidates the higher value tiles on one side, making it easier to manage and plan future moves.\n\nMOVE: left",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 131,
+            "total": 346
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            8,
+            2,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the highest numbers are on the left side of the board. To merge the 8s and 2s effectively, we should move the tiles to the left. Moving left will bring the 8s together and allow us to merge them to create a 16 tile. This will also free up space for new tiles to appear and potentially create more opportunities for merges.\n\nAdditionally, moving left will help consolidate the higher-value tiles on one side of the board, making it easier to manage and plan future moves efficiently.\n\nMOVE: left",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 113,
+            "total": 328
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            8,
+            2,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the highest value tile is 8. To maximize the chances of merging tiles and creating larger numbers, it is better to keep the higher value tiles together. \n\nLooking at the board, we can see that the 8 tiles are separated by empty spaces. To bring them closer together, we should move the tiles to the right. This will allow the 8 tiles to merge when the next move is made.\n\nAdditionally, moving the tiles to the right will also bring the 4 and 2 tiles closer together, potentially setting up a merge in the future.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 122,
+            "total": 337
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            8,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            4,
+            2
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the largest numbers are located on the right side. To merge them efficiently, we need to move them towards the left. \n\nLooking at the board, we can see that the 8, 8, 2, and 4 can be merged by moving everything to the left. This will create a 16 tile and a 4 tile. \n\nTherefore, the best move in this situation is to move everything to the left.\n\nMOVE: left",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 97,
+            "total": 312
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            8,
+            2,
+            0,
+            2
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            2,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the highest numbers are 8 and 4. To merge tiles efficiently and create space for new tiles, it would be best to move the tiles towards the right. This will bring the 8s and 4s together for potential merges. \n\nAnalyzing the board, the next move should be to slide the tiles to the right. This will result in the following board state:\n\n0 8 2 2\n0 0 0 8\n0 0 0 2\n0 4 2 4\n\nThis move sets up potential merges for the next turn and creates space for new tiles to appear. \n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 139,
+            "total": 354
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            8,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            4,
+            2
+          ]
+        ],
+        "chosenMove": "down",
+        "reasoning": "In the current board state, the highest numbers are located in the rightmost column. To merge them efficiently, we need to move them to the left. Since the rightmost column is already filled with numbers, we can't move the numbers directly to the left. \n\nTo address this, we can first move all the numbers to the right by pressing the \"down\" key. This will create space in the rightmost column. Then, we can move the numbers to the left by pressing the \"left\" key. This will allow us to merge the numbers in the rightmost column efficiently.\n\nTherefore, the next move should be:\nMOVE: down",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 131,
+            "total": 346
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            8,
+            8
+          ],
+          [
+            0,
+            4,
+            4,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the highest numbers are concentrated on the right side. To merge tiles efficiently and create space for new tiles, it would be beneficial to move the tiles towards the right. \n\nLooking at the board, we can see that by moving the tiles to the right, we can potentially merge the 4s and 8s on the rightmost column. This will create larger numbers and clear up space for new tiles to appear.\n\nTherefore, the best move in this situation would be to move the tiles to the right.\n\nMOVE: right",
+        "scoreDelta": 24,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 112,
+            "total": 327
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            4,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            16
+          ],
+          [
+            0,
+            0,
+            8,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the largest numbers are in the bottom row and rightmost column. To merge tiles efficiently and clear up space for new tiles, I would move the tiles to the right. This will bring the 4s and 16 together for potential merges, and also align the 8 and 4 for future combinations.\n\nBy moving to the right, we can potentially merge the 4s and 16 to create a 32, and then have the 8 and 4 ready to merge into a 16. This will help consolidate the board and create larger tiles for better combinations in the future.\n\nMOVE: right",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 129,
+            "total": 344
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            2,
+            0,
+            0,
+            16
+          ],
+          [
+            0,
+            0,
+            8,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the largest numbers are in the bottom right corner. To merge them efficiently, I should move the tiles to the right. This will bring the 8 and 4 tiles together to create a 16 tile. Additionally, moving right will also align the 2 and 16 tiles, which can potentially merge in future moves.\n\nConsidering the overall board layout and the goal of creating larger tiles, the best move would be to slide the tiles to the right.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 101,
+            "total": 316
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            2,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            2,
+            16
+          ],
+          [
+            0,
+            0,
+            8,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the highest value tile is 16. To reach the goal of 2048, we need to focus on merging tiles efficiently and creating larger numbers. \n\nLooking at the board, we can see that the highest numbers are on the right side. To merge the 16 and 4 tiles, we need to move them to the right. Moving right would also align the 8 and 8 tiles for a potential merge in the future. \n\nTherefore, the best move in this situation is to move right.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 112,
+            "total": 327
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            2,
+            16
+          ],
+          [
+            4,
+            0,
+            8,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the largest numbers are located in the rightmost column. To merge the larger numbers efficiently, it would be beneficial to move the tiles towards the right. \n\nLooking at the board, we can see that the rightmost column has the potential for multiple merges. By moving the tiles to the right, we can combine the 4 and 8 to form a 16, and then merge the 16 with the other 16 to create a 32. This will clear up some space and allow for more potential merges in the future.\n\nTherefore, the best move in this situation is to move the tiles to the right.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 134,
+            "total": 349
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            2,
+            2,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            2,
+            16
+          ],
+          [
+            0,
+            4,
+            8,
+            4
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the largest numbers are located in the bottom right corner. To merge tiles efficiently and clear up space for new tiles, it would be best to move the tiles towards the right. This will bring the larger numbers together and allow for potential merges.\n\nLooking at the board, we can see that moving right will result in the following board state:\n0 0 4 4\n0 0 0 8\n0 0 2 16\n0 0 4 12\n\nThis move sets up potential merges for the next turn and keeps the board relatively organized. It also opens up space for new tiles to appear. \n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 138,
+            "total": 353
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            4,
+            4
+          ],
+          [
+            0,
+            2,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            2,
+            16
+          ],
+          [
+            0,
+            4,
+            8,
+            4
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the left. This move will allow the two '4' tiles in the first row to merge into an '8', creating more space for future moves. Additionally, it will align the '2' tile in the second row with the '8' tile, potentially setting up a future merge. \n\nMoving the tiles to the left will also consolidate the higher-value tiles on the right side of the board, making it easier to manage and plan future moves. \n\nMOVE: left",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 112,
+            "total": 327
+          }
+        }
+      }
+    ],
+    "finalScore": 88,
+    "maxTile": 16,
+    "totalMoves": 21,
+    "won": false,
+    "duration": 29799,
+    "totalTokens": 6610,
+    "estimatedCost": 0
+  },
+  {
+    "modelInfo": {
+      "name": "OpenAI",
+      "version": "gpt-3.5-turbo",
+      "model": "gpt-3.5-turbo",
+      "maxTokens": 150,
+      "temperature": 0.2,
+      "apiKey": "sk-...REMOVED..."
+    },
+    "moves": [
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the '2' tile in the second row to the right, merging it with the '2' tile in the fourth row. This will create a '4' tile and consolidate the '2' tiles, making space for new tiles to appear. \n\nThe resulting board state after the move would be:\n0 0 0 0\n0 0 0 2\n0 0 0 4\n0 0 0 0\n\nThis move sets up the board for potential future merges and allows for more strategic tile placements. \n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 211,
+            "completion": 129,
+            "total": 340
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. This move will bring the two '2' tiles on the second row together to create a '4' tile. Additionally, it will align the two '2' tiles on the third row for a potential future merge. Moving to the right also clears up space on the left side for new tiles to appear.\n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 211,
+            "completion": 85,
+            "total": 296
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "In the current board state, the best move would be to move the tiles up. This move will bring the '2' tile to the top row where it can potentially merge with the other '2' tile. Additionally, moving up will create space for new tiles to appear at the bottom row, potentially setting up future merges.\n\nMOVE: up",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 213,
+            "completion": 70,
+            "total": 283
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the best move would be to move the tiles to the right. This move will combine the two '2' tiles in the second row into a '4' tile, clearing up space for future moves. It also aligns the '4' tile in the second row with the '4' tile in the fourth row, potentially setting up a future merge. Additionally, moving to the right allows for better consolidation of the tiles on the board.\n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 99,
+            "total": 314
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "up",
+        "reasoning": "In the current board state, the highest numbers are 4 and 2. To merge them efficiently, we need to bring them together. Since the 2's are in the same column, we should move them up to merge them into a 4. This will also clear up space for new tiles to appear.\n\nAdditionally, by moving the 2's up, we create a potential for merging the two 4's in the third column to form an 8 in the future. This consolidation of numbers will help in managing the board effectively.\n\nMOVE: up",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 114,
+            "total": 329
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            2,
+            0,
+            8
+          ],
+          [
+            0,
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the highest value tile is 8. To merge tiles efficiently and clear up space for potential future merges, it's best to move the tiles towards the right. This will bring the 8 tile closer to the 2 tiles, allowing for potential merges in the next few moves.\n\nAdditionally, moving to the right will also create space for the new '2' tile to appear, potentially setting up more opportunities for merges.\n\nMOVE: right",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 94,
+            "total": 309
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            2,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the largest numbers are in the rightmost column. To merge the 2s and 8s, we need to move them to the left. Since the top row is already empty, we can move the 2 and 8 to the leftmost column. This will allow us to merge the 2 and 8 to create a 16 tile. \n\nTherefore, the best move would be to move the tiles to the left.\n\nMOVE: left",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 98,
+            "total": 313
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            8,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In this board state, the highest value tile is an 8. To merge tiles efficiently and clear up space for potential future merges, it would be strategic to move the tiles to the right. This will bring the 8 tile closer to the 2 tile, allowing for a potential merge in the next move. Additionally, moving to the right will also consolidate the 4 and 2 tiles, creating more space for new tiles to appear.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 93,
+            "total": 308
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            2,
+            8
+          ],
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the largest numbers are on the right side. To merge them efficiently, we need to move them to the left. Since the right side is already filled with smaller numbers, it's best to move everything to the left to create space for merging the larger numbers.\n\nLooking at the board, we can see that the best move is to shift all tiles to the left. This will bring the 8, 4, and 4 tiles together, allowing us to merge them and create larger numbers. Additionally, this move will also create space for new tiles to appear on the right side.\n\nMOVE: left",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 127,
+            "total": 342
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            8,
+            0,
+            0
+          ],
+          [
+            4,
+            2,
+            0,
+            2
+          ],
+          [
+            4,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the highest numbers are located on the left side. To merge the 8 and 2 tiles on the second row, we need to move the tiles to the left. This will also align the 4 tiles on the first row for a potential future merge. Moving left seems to be the best option to consolidate the higher numbers and create space for new tiles to appear.\n\nAdditionally, moving left will also help in keeping the board organized and prevent the accumulation of higher numbers on the right side, which could make it difficult to merge tiles efficiently in the future.\n\nMOVE: left",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 121,
+            "total": 336
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            8,
+            0,
+            0
+          ],
+          [
+            4,
+            4,
+            0,
+            0
+          ],
+          [
+            4,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the highest value tiles are 8 and 4. To merge them efficiently, we need to bring them together. Moving the tiles to the right would align the 8 and 4 tiles in the same column, allowing them to merge on the next move. \n\nAdditionally, moving to the right would also consolidate the 2 tiles on the right side, making space for new tiles to appear on the left side. This would help in maintaining a balanced distribution of tiles across the board.\n\nTherefore, the best move in this situation is to move right.\n\nMOVE: right",
+        "scoreDelta": 12,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 120,
+            "total": 335
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            0,
+            0,
+            2,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            4,
+            4
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the highest value tile is 8. To maximize the chances of merging tiles and creating larger numbers, it is best to consolidate the numbers on the board. Looking at the board, it seems that moving the tiles to the left would be the most strategic move. This would bring the 2 and 8 tiles together, potentially creating a 16 tile. It also aligns the 4 and 4 tiles, which can merge into an 8 tile. \n\nAdditionally, moving left would help in clearing up space on the right side of the board for new tiles to appear. This will allow for more opportunities to merge tiles and progress towards the goal of reaching 2048.\n\nMOVE: left",
+        "scoreDelta": 8,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 146,
+            "total": 361
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            8,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            2,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the highest value tile is 8. To merge tiles efficiently and create space for new tiles, it's best to consolidate the board by moving the tiles towards the left. This will bring the matching tiles together for potential merges and create opportunities for larger value tiles.\n\nLooking at the board, we can move left to merge the two 8 tiles on the first row, and potentially merge the two 2 tiles on the last row. This move will also open up space for new tiles to appear and allow for more strategic moves in the future.\n\nMOVE: left",
+        "scoreDelta": 4,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 118,
+            "total": 333
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            8,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            4
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0
+          ]
+        ],
+        "chosenMove": "left",
+        "reasoning": "In the current board state, the largest numbers are located on the left side of the board. To merge tiles efficiently and clear up space for new tiles, it would be strategic to move the tiles towards the left. This will allow the larger numbers to combine and create higher-valued tiles.\n\nLooking at the board, we can see that by moving the tiles to the left, we can potentially merge the two 8s in the first row to create a 16. This consolidation of numbers will help in creating larger tiles and progressing towards the goal of reaching 2048.\n\nMOVE: left",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 119,
+            "total": 334
+          }
+        }
+      },
+      {
+        "boardState": [
+          [
+            2,
+            8,
+            0,
+            0
+          ],
+          [
+            8,
+            4,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            2
+          ]
+        ],
+        "chosenMove": "right",
+        "reasoning": "In the current board state, the highest value tile is 8, and there are two 8 tiles that can be merged to create a 16 tile. To do this, we need to move the tiles to the right. Moving right will also bring the 4 and 2 tiles closer together, potentially setting up a future merge.\n\nAnalyzing the board, the best move would be to go right.\n\nMOVE: right",
+        "scoreDelta": 0,
+        "metadata": {
+          "tokens": {
+            "prompt": 215,
+            "completion": 86,
+            "total": 301
+          }
+        }
+      }
+    ],
+    "finalScore": 48,
+    "maxTile": 8,
+    "totalMoves": 15,
+    "won": false,
+    "duration": 20627,
+    "totalTokens": 4834,
+    "estimatedCost": 0
+  }
+]
